@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["account-setting"],{3345:function(n,t,e){"use strict";e.r(t);var s=function(){var n=this,t=n._self._c;return t("div",[n._v("setting")])},u=[],c=e("2877"),i={},l=Object(c["a"])(i,s,u,!1,null,null,null);t["default"]=l.exports}}]);
+//# sourceMappingURL=account-setting.673fe9ee.js.map

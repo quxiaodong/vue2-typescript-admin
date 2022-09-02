@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["list-content-article"],{d9e2a:function(n,t,e){"use strict";e.r(t);var l=function(){var n=this,t=n._self._c;return t("div",[n._v("ContentArticle")])},c=[],i=e("2877"),o={},r=Object(i["a"])(o,l,c,!1,null,null,null);t["default"]=r.exports}}]);
+//# sourceMappingURL=list-content-article.53f5dacf.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["account-center"],{fd32:function(n,t,e){"use strict";e.r(t);var u=function(){var n=this,t=n._self._c;return t("div",n._l(200,(function(e){return t("p",{key:e},[n._v(n._s(e))])})),0)},c=[],r=e("2877"),l={},o=Object(r["a"])(l,u,c,!1,null,null,null);t["default"]=o.exports}}]);
+//# sourceMappingURL=account-center.6d198b2e.js.map
