@@ -1,29 +1,35 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/account/center'
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/login',
+    component: () => import(/* webpackChunkName: "login" */ '@/views/login/Login.vue'),
+    meta: { auth: false }
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
+const routerOptions: RouterOptions = {
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
-})
+}
+
+const createRouter = (): VueRouter => new VueRouter(routerOptions)
+
+const router: VueRouter = createRouter()
+
+export function resetRouter (): void {
+  const newRouter: VueRouter = createRouter()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore next line
+  router.matcher = newRouter.matcher
+}
 
 export default router

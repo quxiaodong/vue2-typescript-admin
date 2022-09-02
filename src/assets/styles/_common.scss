@@ -1,0 +1,24 @@
+html, body, #app {
+  @apply w-full h-full;
+}
+
+.drawer-lock-scroll {
+  overflow: hidden;
+  width: calc(100% - 15px);
+}
+
+._color-primary {
+  @apply text-slate-900 dark:text-white;
+}
+
+._color-secondary {
+  @apply text-slate-500 dark:text-slate-400;
+}
+
+._background-primary {
+  @apply bg-white dark:bg-slate-800;
+}
+
+._background-secondary {
+  @apply bg-slate-50 dark:bg-slate-900;
+}
